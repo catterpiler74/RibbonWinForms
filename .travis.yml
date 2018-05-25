@@ -7,7 +7,7 @@ script:
 deploy:
   provider: releases
   api_key: "0cfdcc5688e57a18a4d8"
-  file: "/home/travis/build/catterpiler74/RibbonWinForms/src/RibbonDemo2/bin/Debug/System.Windows.Forms.Ribbon.dll"
+  file: "RibbonWinForms"
   skip_cleanup: true
   on:
     tags: true
