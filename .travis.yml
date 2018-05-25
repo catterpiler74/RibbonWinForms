@@ -1,2 +1,6 @@
 language: csharp
-solution: src/System.Windows.Forms.Ribbon.sln
+solution: './src/System.Windows.Forms.Ribbon.sln'
+install:
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./src/System.Windows.Forms.Ribbon.sln
+script:
+- xbuild ./src/System.Windows.Forms.Ribbon.sln
