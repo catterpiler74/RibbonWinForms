@@ -1,2 +1,2 @@
-language: С#
-"os": "Windows"
+language: csharp
+solution: src/System.Windows.Forms.Ribbon.sln
