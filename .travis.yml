@@ -3,9 +3,9 @@ solution: './src/System.Windows.Forms.Ribbon.sln'
 script:
 - xbuild ./src/System.Windows.Forms.Ribbon.sln
 deploy:
-  provider: releases
-  api_key: "1FCi1GtBrMlL6OmC8NArLA"
-  file: "RibbonWinFormsRelease"
-  skip_cleanup: true
+  provider: pages
+  skip-cleanup: true
+  github-token: '0cfdcc5688e57a18a4d8'  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
   on:
-    tags: true
+    branch: master
