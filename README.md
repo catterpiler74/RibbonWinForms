@@ -1,8 +1,8 @@
 # RibbonWinForms
 An Office Ribbon Control for .NET WinForms
-
+<a href="https://travis-ci.com/catterpiler74/RibbonWinForms">
 <img src='https://travis-ci.com/catterpiler74/RibbonWinForms.svg?branch=master' />
-
+</a>
 
 ## Download
 https://github.com/RibbonWinForms/RibbonWinForms/releases
