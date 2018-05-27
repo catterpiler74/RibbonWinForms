@@ -2,13 +2,3 @@ language: csharp
 solution: './src/System.Windows.Forms.Ribbon.sln'
 script:
 - xbuild ./src/System.Windows.Forms.Ribbon.sln
-before_deploy:
-      # Set up git user name and tag this commit
-      - git config --local user.name "Tommy"
-      - git config --local user.email "fifa2999@ya.ru"
-      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-    deploy:
-      provider: releases
-      api_key: $GITHUBOAUTHTOKEN
-      file: "RibbonRelease"
-      skip_cleanup: true
